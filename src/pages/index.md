@@ -9,3 +9,5 @@ Dies ist eine einfache Webseite, die mit [Astro](https://astro.build) erstellt w
 
 Sie können Seiten als Markdown-Dateien hinzufügen und GitHub Actions baut die Seite automatisch.
 
+
+Diese Seite wurde soeben aktualisiert und sollte nun über GitHub Pages sichtbar sein.
