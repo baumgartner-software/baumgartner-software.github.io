@@ -8,3 +8,4 @@ layout: ../layouts/BaseLayout.astro
 Dies ist eine einfache Webseite, die mit [Astro](https://astro.build) erstellt wird.
 
 Sie können Seiten als Markdown-Dateien hinzufügen und GitHub Actions baut die Seite automatisch.
+
