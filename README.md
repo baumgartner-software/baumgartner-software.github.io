@@ -15,5 +15,5 @@ npm run dev
 
 ## Deployment
 
-Das Deployment erfolgt automatisch über den Workflow in `.github/workflows/deploy.yml`. Die gebaute Seite wird auf dem Branch `gh-pages` veröffentlicht.
+Das Deployment erfolgt automatisch über den Workflow in `.github/workflows/jekyll-gh-pages.yml`. Die gebaute Seite wird auf dem Branch `gh-pages` veröffentlicht.
 
