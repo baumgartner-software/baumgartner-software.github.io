@@ -1,7 +1,8 @@
 ---
 title: Impressum
 layout: ../layouts/BaseLayout.astro
-import VAT from '../../umsatzsteuer-id.md'
+setup: |
+  import VAT from '../../umsatzsteuer-id.md'
 ---
 
 # Impressum
