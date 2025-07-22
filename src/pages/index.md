@@ -3,11 +3,14 @@ title: Baumgartner Software
 layout: ../layouts/BaseLayout.astro
 ---
 
-# Willkommen bei Baumgartner Software
+# Willkommen bei Baumgartner-Software
 
-Dies ist eine einfache Webseite, die mit [Astro](https://astro.build) erstellt wird.
+Wir bieten maßgeschneiderte Software-Lösungen und Consulting-Dienstleistungen. Unser aktueller Schwerpunkt ist die [Rocket-Meals App](https://rocket-meals.de).
 
-Sie können Seiten als Markdown-Dateien hinzufügen und GitHub Actions baut die Seite automatisch.
+## Unsere Mission
 
+IDEEN. WACHSEN. LASSEN.
 
-Diese Seite wurde soeben aktualisiert und sollte nun über GitHub Pages sichtbar sein.
+Baumgartner-Software hilft Ihnen dabei, innovative Ideen zu realisieren und zu erfolgreichen Produkten wachsen zu lassen.
+
+[Kontaktieren Sie uns](/kontakt)
