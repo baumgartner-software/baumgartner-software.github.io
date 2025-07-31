@@ -39,6 +39,23 @@ import ImpressumInfo from '../../impressum-info.md'
         box-shadow: 0 0 10px rgba(0,0,0,.1);
         border-radius: 8px;
       }
+      .hero {
+        background: url('/background-mouse-keyboard.jpg') center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 6rem 1rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+      }
+      .info-section {
+        background-color: #32322D;
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
       main img {
         max-width: 100%;
         height: auto;
@@ -89,6 +106,7 @@ import ImpressumInfo from '../../impressum-info.md'
         <a href="/kontakt">Kontakt</a>
       </nav>
     </header>
+    <slot name="hero" />
     <main>
       <slot />
     </main>
