@@ -2,7 +2,7 @@
 title: Impressum
 layout: ../layouts/BaseLayout.astro
 setup: |
-  import VAT from '../../umsatzsteuer-id.md'
+  import ImpressumInfo from '../../impressum-info.md'
 ---
 
 # Impressum
@@ -13,6 +13,6 @@ Musterstraße 1
 
 E-Mail: info@example.com
 
-<VAT />
+<ImpressumInfo />
 
 Dies ist eine Demo-Seite.
