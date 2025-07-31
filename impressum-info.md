@@ -1,22 +1,8 @@
-## Unternehmenskennzeichen
-
-**Unternehmensnummer (VBG):** 4527&nbsp;8038&nbsp;0355&nbsp;001  
-**Betriebsnummer:** 75076511
-
-## Registereintrag
-
-Eintragung im Registergericht: Oldenburg  
-Registernummer: HRB&nbsp;219785
-
-## Umsatzsteuer-ID
-
-Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: DE362633044
-
-## Steuernummer
-
-68/213/02808
-
-## Gründungsdatum
-
-Notar: 17.07.2023  
-Schreiben vom Handelsregister: 01.08.2023
+**Firmenname:** Baumgartner Software UG (haftungsbeschränkt)  
+**Adresse:** Bernhardstraße 20, 49413  
+**Telefon:** +49 170 2215430  
+**E-Mail:** info@baumgartner-software.de  
+**Geschäftsführer:** Nils Baumgartner  
+**Registergericht:** Oldenburg  
+**Registernummer:** HRB 219785  
+**Umsatzsteuer-Identifikationsnummer:** DE362633044
