@@ -3,11 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -38,6 +36,51 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+
+  # Lighthouse audit job
+  lighthouse:
+    runs-on: ubuntu-latest
+    needs: deploy
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Wait for deployment
+        run: sleep 60
+      
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.12.x
+      
+      - name: Create results directory
+        run: mkdir -p results/lighthouse
+      
+      - name: Run Lighthouse CI
+        run: lhci autorun
+      
+      - name: Upload Lighthouse results
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-results
+          path: results/lighthouse/
+          retention-days: 30
+      
+      - name: Commit Lighthouse results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add results/lighthouse/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Add Lighthouse audit results [skip ci]"
+            git push
+          fi
 
   # Deployment job
   deploy:
