@@ -414,6 +414,8 @@ body {
 
 .contact-form iframe {
     border-radius: 10px;
+    width: 100%;
+    display: block;
 }
 
 /* Footer */
