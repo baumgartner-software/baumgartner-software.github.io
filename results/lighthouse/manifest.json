@@ -2,10 +2,10 @@
   {
     "url": "https://baumgartner-software.github.io/",
     "isRepresentativeRun": false,
-    "htmlPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_22_52_58.report.html",
-    "jsonPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_22_52_58.report.json",
+    "htmlPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_23_01_37.report.html",
+    "jsonPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_23_01_37.report.json",
     "summary": {
-      "performance": 0.73,
+      "performance": 0.88,
       "accessibility": 0.98,
       "best-practices": 0.75,
       "seo": 1,
@@ -15,10 +15,10 @@
   {
     "url": "https://baumgartner-software.github.io/",
     "isRepresentativeRun": false,
-    "htmlPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_22_53_16.report.html",
-    "jsonPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_22_53_16.report.json",
+    "htmlPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_23_01_54.report.html",
+    "jsonPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_23_01_54.report.json",
     "summary": {
-      "performance": 0.89,
+      "performance": 0.55,
       "accessibility": 0.98,
       "best-practices": 0.75,
       "seo": 1,
@@ -28,10 +28,10 @@
   {
     "url": "https://baumgartner-software.github.io/",
     "isRepresentativeRun": true,
-    "htmlPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_22_53_30.report.html",
-    "jsonPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_22_53_30.report.json",
+    "htmlPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_23_02_09.report.html",
+    "jsonPath": "/home/runner/work/baumgartner-software.github.io/baumgartner-software.github.io/results/lighthouse/baumgartner_software_github_io-_-2025_09_16_23_02_09.report.json",
     "summary": {
-      "performance": 0.89,
+      "performance": 0.58,
       "accessibility": 0.98,
       "best-practices": 0.75,
       "seo": 1,
