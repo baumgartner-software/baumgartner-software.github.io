@@ -16,3 +16,7 @@ This directory contains Lighthouse audit results for the website. Results are au
 - **SEO**: Search engine optimization metrics
 
 Results are automatically uploaded as GitHub Actions artifacts and also committed to this directory for historical tracking.
+
+## Important Note
+
+The GitHub Actions workflow is configured to upload Lighthouse results regardless of whether the performance assertions pass or fail. This ensures that results are always available for analysis and improvement by AI models, even when the website doesn't meet the configured performance thresholds.
