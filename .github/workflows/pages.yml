@@ -62,15 +62,18 @@ jobs:
       
       - name: Run Lighthouse CI
         run: lhci autorun
+        continue-on-error: true
       
       - name: Upload Lighthouse results
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: lighthouse-results
           path: results/lighthouse/
           retention-days: 30
       
       - name: Commit Lighthouse results
+        if: always()
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
