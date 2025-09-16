@@ -1,0 +1,101 @@
+/*
+ * Custom icon styles to replace Font Awesome
+ * GDPR-compliant local icons
+ */
+
+/* Base icon styles */
+.fas {
+  font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile phone icon */
+.fa-mobile-alt::before {
+  content: "📱";
+}
+
+/* Rocket icon */
+.fa-rocket::before {
+  content: "🚀";
+}
+
+/* Code icon */
+.fa-code::before {
+  content: "</>";
+  font-family: monospace;
+  font-weight: bold;
+}
+
+/* Light bulb icon */
+.fa-lightbulb::before {
+  content: "💡";
+}
+
+/* Users icon */
+.fa-users::before {
+  content: "👥";
+}
+
+/* Utensils/food icon */
+.fa-utensils::before {
+  content: "🍽️";
+}
+
+/* Check mark icon */
+.fa-check::before {
+  content: "✓";
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* External link icon */
+.fa-external-link-alt::before {
+  content: "↗";
+  font-weight: bold;
+}
+
+/* Alternative approach for better compatibility - CSS-drawn icons */
+@media (max-width: 768px) {
+  /* Fallback to simpler symbols on smaller screens */
+  .fa-mobile-alt::before {
+    content: "📱";
+  }
+  
+  .fa-rocket::before {
+    content: "🚀";
+  }
+  
+  .fa-code::before {
+    content: "<>";
+    font-family: monospace;
+  }
+  
+  .fa-lightbulb::before {
+    content: "●";
+    color: #ffc107;
+  }
+  
+  .fa-users::before {
+    content: "👥";
+  }
+  
+  .fa-utensils::before {
+    content: "🍽";
+  }
+  
+  .fa-check::before {
+    content: "✓";
+    color: #28a745;
+  }
+  
+  .fa-external-link-alt::before {
+    content: "↗";
+  }
+}
