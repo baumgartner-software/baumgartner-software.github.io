@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung | Baumgartner Software UG</title>
+    <meta name="description" content="Erfahren Sie, wie Baumgartner Software UG personenbezogene Daten verarbeitet und schützt.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-ku5A5FZjzQ+4gsuLa1+F6sB+bC5c56t2y/xO+8I2SpD+lNEwGDbVS9K6uzxhpcJn/qdNqP5pZDU8wC8N5pKA3w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Baumgartner Software</h2>
+                </div>
+                <ul class="nav-menu" role="menubar" id="nav-menu">
+                    <li class="nav-item" role="none">
+                        <a href="index.html#home" class="nav-link" role="menuitem">Start</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="index.html#about" class="nav-link" role="menuitem">Über uns</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="index.html#products" class="nav-link" role="menuitem">Produkte</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="index.html#contact" class="nav-link" role="menuitem">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu" role="button" aria-label="Navigationsmenü öffnen" aria-expanded="false" aria-controls="nav-menu" tabindex="0">
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="legal-main" role="main">
+        <div class="container legal-container">
+            <section class="legal-intro" aria-labelledby="privacy-title">
+                <p class="legal-kicker">Rechtliche Hinweise</p>
+                <h1 id="privacy-title">Datenschutzerklärung</h1>
+                <p class="legal-subtitle">Transparente Informationen zum Umgang mit Ihren personenbezogenen Daten bei Baumgartner Software UG.</p>
+            </section>
+            <article id="privacy-content" class="legal-article" role="region" aria-live="polite" aria-busy="true">
+                <p class="legal-loading">Die Datenschutzerklärung wird geladen …</p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo" aria-label="Website Footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Baumgartner Software UG</h3>
+                    <p>Innovative Softwarelösungen für die digitale Zukunft</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliche Informationen</h4>
+                    <p><strong>Firmenname:</strong> Baumgartner Software UG (haftungsbeschränkt)</p>
+                    <p><strong>Geschäftsführer:</strong> Nils Baumgartner</p>
+                    <p><strong>Adresse:</strong> Bernhardstraße 20, 49413</p>
+                    <p><strong>Telefon:</strong> <a href="tel:+49 170 2215430" aria-label="Telefonnummer anrufen">+49 170 2215430</a></p>
+                    <p><strong>E-Mail:</strong> <a href="mailto:info@baumgartner-software.de" aria-label="E-Mail senden">info@baumgartner-software.de</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Handelsregister</h4>
+                    <p><strong>Registergericht:</strong> Oldenburg</p>
+                    <p><strong>Registernummer:</strong> HRB 219785</p>
+                    <p><strong>USt-IdNr:</strong> DE362633044</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produkte</h4>
+                    <ul role="list">
+                        <li role="listitem"><a href="https://rocket-meals.de" target="_blank" rel="noopener noreferrer">rocket-meals.de</a></li>
+                        <li role="listitem"><a href="index.html#contact">Individuelle Softwarelösungen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Baumgartner Software UG. Alle Rechte vorbehalten.</p>
+                <div class="footer-links" role="list">
+                    <a href="datenschutz.html" role="listitem">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('privacy-content');
+
+            if (!container) {
+                return;
+            }
+
+            const renderFallback = (markdown) => {
+                const escaped = markdown
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
+                container.innerHTML = `<pre class="legal-fallback">${escaped}</pre>`;
+            };
+
+            fetch('datenschutz.md')
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error('Die Datenschutzerklärung konnte nicht geladen werden.');
+                    }
+                    return response.text();
+                })
+                .then(function (markdown) {
+                    if (typeof marked !== 'undefined') {
+                        if (typeof marked.setOptions === 'function') {
+                            marked.setOptions({ mangle: false, headerIds: true, headerPrefix: '' });
+                        }
+                        container.innerHTML = marked.parse(markdown);
+                    } else {
+                        renderFallback(markdown);
+                    }
+                })
+                .catch(function () {
+                    container.innerHTML = '<p>Die Datenschutzerklärung konnte nicht geladen werden. Bitte versuchen Sie es später erneut.</p>';
+                })
+                .finally(function () {
+                    container.removeAttribute('aria-busy');
+                });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
