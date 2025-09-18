@@ -558,13 +558,13 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.footer-section ul li a {
+.footer-section a {
     color: #d1d5db;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
+.footer-section a:hover {
     color: #fbbf24;
 }
 
@@ -773,13 +773,13 @@ body {
 }
 
 .footer-links a {
-    color: #fbbf24;
+    color: #9ca3af;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #fcd34d;
+    color: #fbbf24;
 }
 
