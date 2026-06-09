@@ -14,7 +14,7 @@ const companyInfo = {
   ADDRESS: 'Bernhardstraße 20, 49413',
   PHONE: '+49 170 2215430',
   EMAIL: 'info@baumgartner-software.de',
-  MANAGING_DIRECTOR: 'Nils Baumgartner',
+  MANAGING_DIRECTOR: 'Dr. Nils Baumgartner',
   COMMERCIAL_REGISTER: 'Oldenburg',
   REGISTRATION_NUMBER: 'HRB 219785',
   VAT_ID: 'DE362633044'

@@ -10,7 +10,7 @@
 
 **E-Mail:** info@baumgartner-software.de
 
-**Geschäftsführer:** Nils Baumgartner
+**Geschäftsführer:** Dr. Nils Baumgartner
 
 **Registergericht:** Oldenburg
 
@@ -29,7 +29,7 @@
 
 ### Legal Details
 - **Company Name:** Baumgartner Software UG (haftungsbeschränkt)
-- **Managing Director:** Nils Baumgartner
+- **Managing Director:** Dr. Nils Baumgartner
 - **Commercial Register:** Oldenburg
 - **Registration Number:** HRB 219785
 - **VAT ID:** DE362633044
